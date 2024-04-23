@@ -1,0 +1,189 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="3007765223" file="C:\Users\brandonmoller\Documents\MATLAB\Xbox-Pi\Xbox-Pi.prj" location="C:\Users\brandonmoller\Documents\MATLAB\Xbox-Pi" name="Xbox-Pi" target="target.mlapps" target-name="Package App">
+    <param.appname>Xbox-Pi</param.appname>
+    <param.authnamewatermark>Brandon V. Moller</param.authnamewatermark>
+    <param.email>bmoller@sunyrockland.edu</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot>C:\Users\brandonmoller\AppData\Local\Temp\tp19456e50_989c_4572_80cc_0e29f03f849b.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>24.1</item>
+    </param.products.version>
+    <param.platforms>
+      <item>win64</item>
+    </param.platforms>
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>1814e588-8f70-4f88-bbef-27cf02c35848</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.version />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\MainWindow.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+addon\LibraryBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+ddux\HWSDKDataUtilityHelper.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+dio\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+dio\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\BLEConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\BluetoothConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\ConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\PubSubConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\SerialConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\+connections\WiFiConnectionController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\ActiveLevelEnum.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\base.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\BasePinValidator.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\BitOrderEnum.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\ConnectionTypeEnum.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\footer.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\InterfaceEnum.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\localizedError.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\localizedWarning.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\NumericValidator.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\precisions.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderArrayOfIntsToCharVector.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderArrayOfIntsToString.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderArrayOfPinStringsToRangedString.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderArrayOfStringsToString.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderCellArrayOfCharVectorsToCharVector.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\renderCellArrayOfStringsToString.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\sizeof.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\StringValidator.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\validateDigitalParameter.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\validateHexParameterRanged.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\validateIntArrayParameterRanged.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\+internal\validateIntParameterRanged.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+hwsdk\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+i2c\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+i2c\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+i2c\device.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+pwm\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+pwm\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+rawDevice\device.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+serial\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+serial\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+serial\device.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+spi\controller.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+spi\controller_base.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\matlab\hardware\shared\hwsdk\+matlabshared\+spi\device.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\linux\+codertarget\+linux\+remotebuild\BoardParameters.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\linux\+codertarget\+linux\+remotebuild\getBaseRoot.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\linux\+realtime\+internal\getLinuxRoot.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+internal\createPeripheralLib.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+internal\createPeripheralLib.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+internal\sharedPeripheralLib.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+internal\sharedPeripheralLib.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+online\isMATLABDesktop.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+codertarget\+raspberrypi\+online\isMATLABDesktop.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\+can\Channel.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\+can\ChannelProvider.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\+can\Node.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\+firmware\setupNanomsg.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\+firmware\setupUserland.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\ArduCamCameraBaseClass.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\BoardInfo.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\CameraBoard.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\CANSupport.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\DataUtility.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\DataUtilityHelper.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\DDUXConstants.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\FrameBuffer.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getFunctionName.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getRaspiRoot.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getServerDir.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getServerName.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getServerPort.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\getServerVersion.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\hardware.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\hardwareDisplay.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\HTS221.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\I2Cdev.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\I2CSensorBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\imageDisplay.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\Info.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\installV4l2.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\IOServerBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\isRaspiOS64bit.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\isSimulinkMLFBCodegen.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\Joystick.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\launchServer.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\localizedWarning.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\LPS25H.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\LSM9DS1.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\LSM9ds1AccelGyro.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\LSM9ds1Mag.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\MultiCamAdapter.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\PeripheralBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\private\jpegread.mexw64</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\PWMBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiCANUtils.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiConstants.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiDesktop.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiHWSDKController.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiMCP2515.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\RaspiOnlineIOServer.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\SenseHAT.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\SerialDev.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\Servo.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\ServoBase.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\SPIdev.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\updateServer.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\validateRecordFileFormat.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\+raspi\+internal\Webcam.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\getRaspiIsDesktop.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\getRaspiIsWebAppDeployed.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\realtime\targets\raspi\raspi.m</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\target\supportpackages\shared_linuxservices\+matlabshared\+internal\credentials.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\target\supportpackages\shared_linuxservices\+matlabshared\+internal\ipnode.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\target\supportpackages\shared_linuxservices\+matlabshared\+internal\LinuxSystemInterface.p</file>
+      <file>C:\ProgramData\MATLAB\SupportPackages\R2024a\toolbox\target\supportpackages\shared_linuxservices\+matlabshared\+internal\ssh2client.p</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\ConnectionInfo.mlapp</file>
+      <file>${PROJECT_ROOT}\img</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\brandonmoller\Documents\MATLAB" name="Xbox-Pi" optional="false">C:\Users\brandonmoller\Documents\MATLAB\Xbox-Pi</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2024a</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
