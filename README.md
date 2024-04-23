@@ -32,5 +32,6 @@ The project's main window interface is shown below:
 
 
 ## Additional Resources
-This project was made possible in large-part due to the excellent documentation found <a href="https://github.com/feudalnate/Original-Xbox-Data-Structures/blob/master/EEPROM/README.md#eeprom-data-structure">here</a> - Huge thanks to feudalnate for making this information public!
+This project was made possible in large-part due to the excellent documentation found <a href="https://github.com/feudalnate/Original-Xbox-Data-Structures/blob/master/EEPROM/README.md#eeprom-data-structure">here</a>.
+Huge thanks to feudalnate for making this information public!
 
