@@ -1,0 +1,8 @@
+# Ignore config file
+config.txt
+# Ignore all .bin files
+*.bin
+# Ignore all .prj files
+*.mlappinstall
+# Ignore all project files
+*.prj
