@@ -28,5 +28,6 @@ The Xbox-Pi project aims to enhance the functionality and extend the lifespan of
 ## Project GUI
 The project's main window interface is shown below:
 
-![Main Window](img/mainwindow.png)
+![Main Window]
+<img src="img/mainwindow.png" alt="Main Window" width="500">
 
