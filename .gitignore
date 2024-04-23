@@ -2,5 +2,5 @@
 config.txt
 # Ignore all .bin files
 *.bin
-# Ignore all .prj files
+# Ignore install files
 *.mlappinstall
