@@ -111,25 +111,16 @@ classdef MainWindow < matlab.apps.AppBase
         end
 
         function EEPROM = cryptEEPROM(app, EEPROM, decrypt)
-            % Version 1.0 Motherboard Key
-            enc(1).key = [0x2A; 0x3B; 0xAD; 0x2C; 0xB1; 0x94; 0x4F; 0x93; 0xAA; 0xCD; 0xCD; 0x7E; 0x0A; 0xC2; 0xEE; 0x5A];
-            enc(1).con = [0x00; 0x00; 0x00; 0x00; 0x10; 0xA0; 0x1C; 0x00];
-            % Version 1.1-1.4 Motherboard Key
-            enc(2).key = [0x1D; 0xF3; 0x5C; 0x83; 0x8E; 0xC9; 0xB6; 0xFC; 0xBD; 0xF6; 0x61; 0xAB; 0x4F; 0x06; 0x33; 0xE4];
-            enc(2).con = [0x0F; 0x2A; 0x20; 0xD3; 0x49; 0x17; 0xC8; 0x6D];
-            % Version 1.6+ Motherboard Key
-            enc(3).key = [0x2B; 0x84; 0x57; 0xBE; 0x9B; 0x1E; 0x65; 0xC6; 0xCD; 0x9D; 0x2B; 0xCE; 0xC1; 0xA2; 0x09; 0x61];
-            enc(3).con = [0x4C; 0x70; 0x33; 0xCB; 0x5B; 0xB5; 0x97; 0xD2];
 
             XBVersion = str2double(join(char(EEPROM(0x3C:0x3D)')));
             if XBVersion < 24
-                XBOXKey = enc(1).key;
+                XBOXKey = [0x2A; 0x3B; 0xAD; 0x2C; 0xB1; 0x94; 0x4F; 0x93; 0xAA; 0xCD; 0xCD; 0x7E; 0x0A; 0xC2; 0xEE; 0x5A];
                 app.VersionEditField.Value = '1.0';
             elseif XBVersion < 34
-                XBOXKey = enc(2).key;
+                XBOXKey = [0x1D; 0xF3; 0x5C; 0x83; 0x8E; 0xC9; 0xB6; 0xFC; 0xBD; 0xF6; 0x61; 0xAB; 0x4F; 0x06; 0x33; 0xE4];
                 app.VersionEditField.Value = '1.1-1.4';
             else
-                XBOXKey = enc(3).key;
+                XBOXKey = [0x2B; 0x84; 0x57; 0xBE; 0x9B; 0x1E; 0x65; 0xC6; 0xCD; 0x9D; 0x2B; 0xCE; 0xC1; 0xA2; 0x09; 0x61];
                 app.VersionEditField.Value = '1.6+';
             end
 
@@ -193,7 +184,7 @@ classdef MainWindow < matlab.apps.AppBase
         function loadEEPROM(app)
             app.chipData = app.cryptEEPROM(app.chipData, true);
             app.HDDKeyEditField.Value = join(compose("%.2X", app.chipData(0x1D:0x2C)), '');
-            app.XBOXSerialEditField.Value = char(app.chipData(0x35:0x40)');
+            app.XBOXSerialEditField.Value = string(char(app.chipData(0x35:0x40)'));
             switch uint8(app.chipData(0x2D))
                 case 1
                     app.RegionSettingDropDown.Value = "North America";
@@ -350,6 +341,7 @@ classdef MainWindow < matlab.apps.AppBase
 
         % Button pushed function: WRITEButton
         function WRITEButtonPushed(app, event)
+            app.UpdateTempsCheckBox.Value = false;
             app.appendToLog("Initiating Write Sequence...");
             app.initiateEEPROM();
             writeData = app.cryptEEPROM(app.chipData, false);
