@@ -121,7 +121,7 @@ classdef MainWindow < matlab.apps.AppBase
             enc(3).key = [0x2B; 0x84; 0x57; 0xBE; 0x9B; 0x1E; 0x65; 0xC6; 0xCD; 0x9D; 0x2B; 0xCE; 0xC1; 0xA2; 0x09; 0x61];
             enc(3).con = [0x4C; 0x70; 0x33; 0xCB; 0x5B; 0xB5; 0x97; 0xD2];
 
-            XBVersion = str2double(join(char(EEPROM(0x3B:0x3C)')));
+            XBVersion = str2double(join(char(EEPROM(0x3C:0x3D)')));
             if XBVersion < 24
                 XBOXKey = enc(1).key;
                 app.VersionEditField.Value = '1.0';
@@ -246,36 +246,22 @@ classdef MainWindow < matlab.apps.AppBase
             fclose(fid);
         end
         function appendToLog(app, newText)
-            % Generate timestamp
             dt = datetime('now', 'Format', '[HH:mm:ss]');
-            timestamp = char(dt); % Convert datetime object to character array for display
-
-            % Combine timestamp with new text
+            timestamp = char(dt);
             newTextWithTimestamp = sprintf('%s %s', timestamp, newText);
-
-            % Check the current state of the TextArea and handle accordingly
             if isempty(app.TextArea.Value) || isequal(app.TextArea.Value, "")
-                % If the TextArea is empty or contains only an empty string
-                app.TextArea.Value = newTextWithTimestamp; % Initialize directly with newTextWithTimestamp
+                app.TextArea.Value = newTextWithTimestamp;
             else
-                % If TextArea already contains text, ensure it's in cell array form
                 if ischar(app.TextArea.Value)
-                    % Convert from char array to cell array if it's a single line of text
                     currentText = {app.TextArea.Value};
                 elseif isstring(app.TextArea.Value) && isscalar(app.TextArea.Value)
-                    % Handle single scalar string (unlikely but good for completeness)
                     currentText = {char(app.TextArea.Value)};
                 else
-                    % Assume it's already a cell array of chars
                     currentText = app.TextArea.Value;
                 end
-
-                % Append new text as a new cell element
                 app.TextArea.Value = [currentText; newTextWithTimestamp];
             end
-
-            % Scroll to the bottom of the TextArea
-            drawnow; % Make sure GUI is updated
+            drawnow;
             app.TextArea.scroll('bottom');
         end
     end
@@ -293,21 +279,15 @@ classdef MainWindow < matlab.apps.AppBase
         % Menu selected function: ConnectionInfoMenu
         function ConnectionInfoMenuSelected(app, event)
             connectionInfo = ConnectionInfo(app);
-            % Get Parent App's position and size
             parentPosition = app.UIFigure.Position;
             parentWidth = parentPosition(3);
             parentHeight = parentPosition(4);
             parentX = parentPosition(1);
             parentY = parentPosition(2);
-
-            childWidth = 400; % Example width of child window
-            childHeight = 128; % Example height of child window
-
-            % Calculate the new position for the child window
+            childWidth = 400;
+            childHeight = 128;
             newX = parentX + (parentWidth - childWidth) / 2;
             newY = parentY + (parentHeight - childHeight) / 2;
-
-            % Set the position of the ChildApp window
             connectionInfo.UIFigure.Position = [newX, newY, childWidth, childHeight];
         end
 
@@ -373,7 +353,7 @@ classdef MainWindow < matlab.apps.AppBase
             app.appendToLog("Initiating Write Sequence...");
             app.initiateEEPROM();
             writeData = app.cryptEEPROM(app.chipData, false);
-            if app.connectedStatus && app.readEEPROM(app.eeprom, 256, 128) == writeData
+            if app.connectedStatus & app.readEEPROM(app.eeprom, 256, 128) == writeData
                 app.appendToLog('EEPROM is already up-to-date!');
             elseif app.connectedStatus
                 for i=1:length(writeData)
@@ -464,8 +444,6 @@ classdef MainWindow < matlab.apps.AppBase
                     app.chipData(0x2D) = uint8(2);
                 case "Europe/Australia"
                     app.chipData(0x2D) = uint8(4);
-                otherwise
-                    app.chipData(0x2D) = uint8(1);
             end
         end
     end
